@@ -12,3 +12,5 @@ yarn-error.log*
 
 .idea
 .env
+.DS_Store
+
