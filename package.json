@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@ulixee/hero-playground": "^2.0.0-alpha.33",
+    "dotenv": "^17.2.1",
     "puppeteer": "^24.17.0"
   },
   "devDependencies": {
