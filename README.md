@@ -1,4 +1,4 @@
-# AldiTalk Extender 🚀
+# AldiTalk True Unlimited 🚀
 
 **Turn your AldiTalk "unlimited" plan into REAL unlimited data!** 
 
