@@ -18,8 +18,8 @@ const SELECTORS = {
 } as const;
 
 const TIMEOUTS = {
-  COOKIE_WAIT: 5,
-  SHORT_WAIT: 1,
+  COOKIE_WAIT: 10,
+  SHORT_WAIT: 5,
   EXTEND_WAIT: 10,
   LOOP_INTERVAL: 15 * 60 // 15 minutes
 } as const;
@@ -30,7 +30,7 @@ const wait = (seconds: number): Promise<void> =>
 
 const createBrowser = async (): Promise<Browser> => {
   return await puppeteer.launch({
-    headless: true,
+    headless: false,
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -111,6 +111,8 @@ const findDataVolumeButton = async (page: Page) => {
 };
 
 const extendDataVolume = async (page: Page): Promise<void> => {
+  await wait(TIMEOUTS.EXTEND_WAIT);
+
   try {
     const button = await findDataVolumeButton(page);
 
