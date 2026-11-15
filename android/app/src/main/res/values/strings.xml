@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ALDI TALK Extender</string>
+
+    <string name="intro">Watches your Inland data counter and presses the free \"1 GB nachbuchen\" button when it drops below the threshold. Runs over mobile data only - the booking has to come from the SIM.</string>
+    <string name="label_user">Phone number</string>
+    <string name="hint_user">0177…</string>
+    <string name="label_pass">Password</string>
+    <string name="hint_pass">Portal password</string>
+    <string name="label_interval">Check interval</string>
+    <string name="label_threshold">Book when remaining is at or below (MB)</string>
+    <string name="action_save">Save &amp; schedule</string>
+    <string name="action_run">Run now</string>
+    <string name="action_battery">Allow background runs</string>
+    <string name="label_status">Last run</string>
+    <string name="status_empty">No run recorded yet.</string>
+    <string name="note">Credentials are encrypted with a key held in the Android keystore. The check is scheduled with JobScheduler and survives reboots.</string>
+</resources>

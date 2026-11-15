@@ -1,18 +1,26 @@
 {
-  "name": "AldiTalkExtender",
-  "version": "1.0.0",
-  "description": "",
+  "name": "alditalk-extender",
+  "version": "1.1.0",
+  "description": "Automatically presses ALDI TALK's free '1 GB nachbuchen' button when the Inland data allowance runs low",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node src/index.ts"
+    "start": "node dist/index.js",
+    "once": "node dist/index.js --once",
+    "dry-run": "node dist/index.js --once --dry-run",
+    "dev": "ts-node src/index.ts --once --dry-run",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
-    "@ulixee/hero-playground": "^2.0.0-alpha.33",
     "dotenv": "^17.2.1",
     "puppeteer": "^24.17.0"
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   },
   "private": true
