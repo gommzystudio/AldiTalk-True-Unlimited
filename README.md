@@ -2,7 +2,7 @@
 
 Keeps your Inland data topped up automatically.
 
-With **Tarif L** you get 100 GB per 4 weeks. Once fewer than 1 GB is left, the
+With **Tarif L** you get 25 GB per 4 weeks. Once fewer than 1 GB is left, the
 customer portal offers a **free "1 GB nachbuchen"** button that you may press as
 often as you like. This script logs in, watches the counter and presses that
 button for you when it gets low.
